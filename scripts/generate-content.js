@@ -146,7 +146,7 @@ title: "${template.title}"
 description: "${template.title}"
 category: "${template.category}"
 keywords: [${template.keywords.map(k => `"${k}"`).join(', ')}]
-date: ${new Date().toISOString().split('T')[0]}
+date: 2026-02-01
 author: "Vaughn Sterling"
 ---
 

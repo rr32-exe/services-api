@@ -79,7 +79,7 @@ title: "Article Title"
 description: "Description"
 category: "category-name"
 keywords: ["keyword1", "keyword2"]
-date: 2026-01-31
+date: 2026-02-01
 author: "Vaughn Sterling"
 ---
 
@@ -368,7 +368,7 @@ npm run seed              # Create database schema
 - **Cost: R0/month**
 
 ### Domain Registration
-- Already purchased (8 months remaining)
+- Already purchased (180 days remaining)
 - **Cost: R0/month**
 
 ### OpenAI (One-time)

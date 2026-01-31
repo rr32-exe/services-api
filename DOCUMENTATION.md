@@ -179,7 +179,7 @@ title: "How to Style a Capsule Wardrobe"
 description: "Complete guide to building a minimalist wardrobe"
 category: "fashion"
 keywords: ["mens fashion", "capsule wardrobe", "minimalism"]
-date: 2026-01-31
+date: 2026-02-01
 author: "Vaughn Sterling"
 ---
 

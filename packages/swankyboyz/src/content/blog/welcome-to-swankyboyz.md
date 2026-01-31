@@ -3,7 +3,7 @@ title: "Welcome to SwankyBoyz"
 description: "Your ultimate guide to modern men's style, grooming, and lifestyle. Discover the best products and tips to elevate your game."
 category: "lifestyle"
 keywords: ["mens lifestyle", "style guide", "grooming tips", "fashion advice"]
-date: 2026-01-31
+date: 2026-02-01
 author: "Vaughn Sterling"
 ---
 

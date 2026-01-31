@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { formatDate } from '../../../shared/src/utils/index.js';
+
+const title = 'SwankyBoyz - Modern Men\'s Lifestyle & Style';
+const description = 'Discover the best in men\'s fashion, grooming, and lifestyle. Your guide to looking sharp and living better.';
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-6">Welcome to SwankyBoyz</h1>
+        <p class="text-xl mb-8">Your ultimate guide to modern men's style, grooming, and lifestyle</p>
+        <a href="/blog" class="bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          Explore Articles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Popular Categories</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">👔</div>
+          <h3 class="text-xl font-bold mb-2">Fashion</h3>
+          <p class="text-gray-600 mb-4">Stay on top of the latest men's fashion trends and style tips</p>
+          <a href="/blog?category=fashion" class="text-primary-600 font-semibold hover:underline">Browse Fashion →</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">💪</div>
+          <h3 class="text-xl font-bold mb-2">Fitness</h3>
+          <p class="text-gray-600 mb-4">Get fit with our workout guides and nutrition advice</p>
+          <a href="/blog?category=fitness" class="text-primary-600 font-semibold hover:underline">Browse Fitness →</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">✂️</div>
+          <h3 class="text-xl font-bold mb-2">Grooming</h3>
+          <p class="text-gray-600 mb-4">Master your grooming routine with our expert tips</p>
+          <a href="/blog?category=grooming" class="text-primary-600 font-semibold hover:underline">Browse Grooming →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Articles Preview -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Latest Articles</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-r from-primary-400 to-primary-600"></div>
+          <div class="p-6">
+            <div class="text-sm text-primary-600 font-semibold mb-2">FASHION</div>
+            <h3 class="text-xl font-bold mb-2">Coming Soon</h3>
+            <p class="text-gray-600 mb-4">Articles will appear here after you run the content generation script.</p>
+            <div class="text-sm text-gray-500">Run: npm run generate-content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-2xl mx-auto bg-primary-600 text-white rounded-lg p-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+        <p class="mb-6">Get the latest style tips and product recommendations delivered to your inbox</p>
+        <form class="flex gap-4">
+          <input 
+            type="email" 
+            placeholder="Your email address" 
+            class="flex-1 px-4 py-3 rounded-lg text-gray-900"
+            required
+          />
+          <button type="submit" class="bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</Layout>

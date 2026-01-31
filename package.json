@@ -1,0 +1,38 @@
+{
+  "name": "vaughn-sites",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for Vaughn's three domain setup",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "generate-content": "node scripts/generate-content.js",
+    "deploy:all": "node scripts/deploy-all.js",
+    "deploy:swanky": "cd packages/swankyboyz && npm run deploy",
+    "deploy:tours": "cd packages/vaughnsterlingtours && npm run deploy",
+    "deploy:personal": "cd packages/vaughnsterling && npm run deploy",
+    "dev:swanky": "cd packages/swankyboyz && npm run dev",
+    "dev:tours": "cd packages/vaughnsterlingtours && npm run dev",
+    "dev:personal": "cd packages/vaughnsterling && npm run dev",
+    "build:all": "npm run build:swanky && npm run build:tours && npm run build:personal",
+    "build:swanky": "cd packages/swankyboyz && npm run build",
+    "build:tours": "cd packages/vaughnsterlingtours && npm run build",
+    "build:personal": "cd packages/vaughnsterling && npm run build",
+    "seed": "node scripts/seed-database.js"
+  },
+  "keywords": [
+    "astro",
+    "cloudflare",
+    "affiliate",
+    "content"
+  ],
+  "author": "Vaughn Sterling",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "prompts": "^2.4.2",
+    "chalk": "^4.1.2"
+  }
+}

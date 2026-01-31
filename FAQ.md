@@ -100,7 +100,7 @@ title: "Your Title"
 description: "Brief description"
 category: "category-name"
 keywords: ["keyword1", "keyword2"]
-date: 2026-01-31
+date: 2026-02-10
 author: "Your Name"
 ---
 

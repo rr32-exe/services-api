@@ -3,7 +3,7 @@ title: "Welcome to My Journey"
 description: "Follow my adventures as a digital nomad. From Cape Town to the world – real stories, practical tips, and honest insights about location-independent living."
 category: "personal"
 keywords: ["digital nomad", "travel blog", "remote work", "location independent"]
-date: 2026-01-31
+date: 2026-02-01
 author: "Vaughn Sterling"
 ---
 

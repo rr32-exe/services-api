@@ -21,7 +21,7 @@ A monorepo containing three production-ready websites optimized for Cloudflare's
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 - Cloudflare account (free tier)
 - OpenAI API key (optional, for content generation)
@@ -29,22 +29,27 @@ A monorepo containing three production-ready websites optimized for Cloudflare's
 ### Installation
 
 1. **Clone and Install**
+
 ```bash
 npm run setup
 ```
 
-2. **Configure Environment**
+1. **Configure Environment**
+
 ```bash
 # Copy .env.example to .env and edit with your API keys
 cp .env.example .env
 ```
+
+1. **Generate Content** (Optional)
 
 3. **Generate Content** (Optional)
 ```bash
 npm run generate-content
 ```
 
-4. **Development**
+1. **Development**
+
 ```bash
 # Run individual sites
 npm run dev:swanky      # http://localhost:4321
@@ -60,6 +65,8 @@ npm run deploy:all
 
 # Or deploy individually
 npm run deploy:swanky
+37
+
 npm run deploy:tours
 npm run deploy:personal
 ```

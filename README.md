@@ -43,6 +43,7 @@ cp .env.example .env
 
 1. **Generate Content** (Optional)
 
+3. **Generate Content** (Optional)
 ```bash
 npm run generate-content
 ```
@@ -64,6 +65,8 @@ npm run deploy:all
 
 # Or deploy individually
 npm run deploy:swanky
+37
+
 npm run deploy:tours
 npm run deploy:personal
 ```

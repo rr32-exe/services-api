@@ -79,7 +79,9 @@ title: "Article Title"
 description: "Description"
 category: "category-name"
 keywords: ["keyword1", "keyword2"]
-date: 2026-02-01
+copilot/setup-cloudflare-hosting
+date: 2026-02-10
+main
 author: "Vaughn Sterling"
 ---
 
@@ -368,7 +370,9 @@ npm run seed              # Create database schema
 - **Cost: R0/month**
 
 ### Domain Registration
-- Already purchased (180 days remaining)
+copilot/setup-cloudflare-hosting
+- Already purchased (8 months remaining)
+main
 - **Cost: R0/month**
 
 ### OpenAI (One-time)

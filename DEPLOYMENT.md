@@ -22,6 +22,7 @@ npm run setup
 ```
 
 This will:
+
 - Create `.env` file from template
 - Install all dependencies for all packages
 - Display next steps
@@ -68,11 +69,13 @@ npm run generate-content
 ### Option B: Write Your Own Content
 
 Create markdown files in:
+
 - `packages/swankyboyz/src/content/blog/`
 - `packages/vaughnsterlingtours/src/content/blog/`
 - `packages/vaughnsterling/src/content/blog/`
 
 Format:
+
 ```markdown
 ---
 title: "Article Title"

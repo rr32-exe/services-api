@@ -1,0 +1,61 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy all sites
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Install site dependencies
+        run: |
+          cd packages/swankyboyz && npm install
+          cd ../vaughnsterlingtours && npm install
+          cd ../vaughnsterling && npm install
+      
+      - name: Build SwankyBoyz
+        run: cd packages/swankyboyz && npm run build
+      
+      - name: Build VaughnSterlingTours
+        run: cd packages/vaughnsterlingtours && npm run build
+      
+      - name: Build VaughnSterling
+        run: cd packages/vaughnsterling && npm run build
+      
+      - name: Deploy SwankyBoyz
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy packages/swankyboyz/dist --project-name=swankyboyz
+      
+      - name: Deploy VaughnSterlingTours
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy packages/vaughnsterlingtours/dist --project-name=vaughnsterlingtours
+      
+      - name: Deploy VaughnSterling
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy packages/vaughnsterling/dist --project-name=vaughnsterling

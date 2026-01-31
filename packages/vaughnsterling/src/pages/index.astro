@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'Vaughn Sterling - Personal Brand & Portfolio';
+const description = 'Welcome to my personal website. Discover my work, services, and professional journey.';
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-600 to-purple-700 text-white py-32">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-6xl font-bold mb-6">Vaughn Sterling</h1>
+        <p class="text-2xl mb-8">Digital Nomad | Content Creator | Entrepreneur</p>
+        <div class="flex gap-4 justify-center">
+          <a href="/portfolio" class="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            View Portfolio
+          </a>
+          <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-700 transition">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg h-96"></div>
+          </div>
+          <div>
+            <p class="text-lg text-gray-700 mb-6">
+              I'm Vaughn Sterling, a digital nomad and content creator who left the corporate world 
+              to build a location-independent lifestyle.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              I specialize in creating engaging content, building online businesses, and helping 
+              others transition to remote work and digital nomadism.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://vaughnsterlingtours.com" target="_blank" class="text-purple-600 hover:underline font-semibold">
+                My Travel Blog →
+              </a>
+              <a href="https://swankyboyz.com" target="_blank" class="text-purple-600 hover:underline font-semibold">
+                Men's Lifestyle Site →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">✍️</div>
+          <h3 class="text-xl font-bold mb-4">Content Creation</h3>
+          <p class="text-gray-600 mb-4">
+            SEO-optimized blog posts, articles, and web content that engages and converts.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">💼</div>
+          <h3 class="text-xl font-bold mb-4">Consulting</h3>
+          <p class="text-gray-600 mb-4">
+            Strategic guidance for building online businesses and transitioning to remote work.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+          <p class="text-gray-600 mb-4">
+            Affiliate marketing strategies and content monetization techniques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-r from-green-400 to-green-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">SwankyBoyz</h3>
+            <p class="text-gray-600 mb-4">Men's lifestyle and affiliate marketing site</p>
+            <a href="https://swankyboyz.com" target="_blank" class="text-purple-600 font-semibold hover:underline">
+              View Site →
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Vaughn Sterling Tours</h3>
+            <p class="text-gray-600 mb-4">Digital nomad travel blog and guides</p>
+            <a href="https://vaughnsterlingtours.com" target="_blank" class="text-purple-600 font-semibold hover:underline">
+              View Site →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-purple-600 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+        <p class="text-xl mb-8">
+          Interested in collaborating or learning more about my services?
+        </p>
+        <a href="/contact" class="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -98,22 +98,28 @@ Your content here...
 Test each site locally before deploying:
 
 ### Terminal 1: SwankyBoyz
+
 ```bash
 npm run dev:swanky
 ```
-Visit: http://localhost:4321
+
+Visit: <http://localhost:4321>
 
 ### Terminal 2: VaughnSterlingTours
+
 ```bash
 npm run dev:tours
 ```
-Visit: http://localhost:4322
+
+Visit: <http://localhost:4322>
 
 ### Terminal 3: VaughnSterling
+
 ```bash
 npm run dev:personal
 ```
-Visit: http://localhost:4323
+
+Visit: <http://localhost:4323>
 
 **Check:**
 - [ ] Home page loads correctly

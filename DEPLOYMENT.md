@@ -122,6 +122,7 @@ npm run dev:personal
 Visit: <http://localhost:4323>
 
 **Check:**
+
 - [ ] Home page loads correctly
 - [ ] Navigation works
 - [ ] Blog posts display (if generated)
@@ -175,7 +176,8 @@ npm run deploy:all
 This will deploy all three sites to Cloudflare Pages.
 
 **Expected Output:**
-```
+
+```bash
 ✅ SwankyBoyz deployed successfully!
    https://swankyboyz.pages.dev
 

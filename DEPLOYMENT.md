@@ -205,17 +205,20 @@ For each site, add your custom domain:
 7. Add DNS record (auto-configured if domain is on Cloudflare)
 
 Repeat for:
+
 - `www.swankyboyz.com`
 
 ### VaughnSterlingTours.com
 
 Same process:
+
 - `vaughnsterlingtours.com`
 - `www.vaughnsterlingtours.com`
 
 ### VaughnSterling.com
 
 Same process:
+
 - `vaughnsterling.com`
 - `www.vaughnsterling.com`
 

@@ -22,6 +22,7 @@ npm run setup
 ```
 
 This will:
+
 - Create `.env` file from template
 - Install all dependencies for all packages
 - Display next steps
@@ -68,11 +69,13 @@ npm run generate-content
 ### Option B: Write Your Own Content
 
 Create markdown files in:
+
 - `packages/swankyboyz/src/content/blog/`
 - `packages/vaughnsterlingtours/src/content/blog/`
 - `packages/vaughnsterling/src/content/blog/`
 
 Format:
+
 ```markdown
 ---
 title: "Article Title"
@@ -95,24 +98,31 @@ Your content here...
 Test each site locally before deploying:
 
 ### Terminal 1: SwankyBoyz
+
 ```bash
 npm run dev:swanky
 ```
-Visit: http://localhost:4321
+
+Visit: <http://localhost:4321>
 
 ### Terminal 2: VaughnSterlingTours
+
 ```bash
 npm run dev:tours
 ```
-Visit: http://localhost:4322
+
+Visit: <http://localhost:4322>
 
 ### Terminal 3: VaughnSterling
+
 ```bash
 npm run dev:personal
 ```
-Visit: http://localhost:4323
+
+Visit: <http://localhost:4323>
 
 **Check:**
+
 - [ ] Home page loads correctly
 - [ ] Navigation works
 - [ ] Blog posts display (if generated)
@@ -166,7 +176,8 @@ npm run deploy:all
 This will deploy all three sites to Cloudflare Pages.
 
 **Expected Output:**
-```
+
+```bash
 ✅ SwankyBoyz deployed successfully!
    https://swankyboyz.pages.dev
 
@@ -194,17 +205,20 @@ For each site, add your custom domain:
 7. Add DNS record (auto-configured if domain is on Cloudflare)
 
 Repeat for:
+
 - `www.swankyboyz.com`
 
 ### VaughnSterlingTours.com
 
 Same process:
+
 - `vaughnsterlingtours.com`
 - `www.vaughnsterlingtours.com`
 
 ### VaughnSterling.com
 
 Same process:
+
 - `vaughnsterling.com`
 - `www.vaughnsterling.com`
 

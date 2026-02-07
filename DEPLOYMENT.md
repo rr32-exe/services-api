@@ -22,6 +22,7 @@ npm run setup
 ```
 
 This will:
+
 - Create `.env` file from template
 - Install all dependencies for all packages
 - Display next steps
@@ -68,11 +69,13 @@ npm run generate-content
 ### Option B: Write Your Own Content
 
 Create markdown files in:
+
 - `packages/swankyboyz/src/content/blog/`
 - `packages/vaughnsterlingtours/src/content/blog/`
 - `packages/vaughnsterling/src/content/blog/`
 
 Format:
+
 ```markdown
 ---
 title: "Article Title"
@@ -95,24 +98,31 @@ Your content here...
 Test each site locally before deploying:
 
 ### Terminal 1: SwankyBoyz
+
 ```bash
 npm run dev:swanky
 ```
-Visit: http://localhost:4321
+
+Visit: <http://localhost:4321>
 
 ### Terminal 2: VaughnSterlingTours
+
 ```bash
 npm run dev:tours
 ```
-Visit: http://localhost:4322
+
+Visit: <http://localhost:4322>
 
 ### Terminal 3: VaughnSterling
+
 ```bash
 npm run dev:personal
 ```
-Visit: http://localhost:4323
+
+Visit: <http://localhost:4323>
 
 **Check:**
+
 - [ ] Home page loads correctly
 - [ ] Navigation works
 - [ ] Blog posts display (if generated)
@@ -166,7 +176,8 @@ npm run deploy:all
 This will deploy all three sites to Cloudflare Pages.
 
 **Expected Output:**
-```
+
+```text
 ✅ SwankyBoyz deployed successfully!
    https://swankyboyz.pages.dev
 
@@ -194,17 +205,20 @@ For each site, add your custom domain:
 7. Add DNS record (auto-configured if domain is on Cloudflare)
 
 Repeat for:
+
 - `www.swankyboyz.com`
 
 ### VaughnSterlingTours.com
 
 Same process:
+
 - `vaughnsterlingtours.com`
 - `www.vaughnsterlingtours.com`
 
 ### VaughnSterling.com
 
 Same process:
+
 - `vaughnsterling.com`
 - `www.vaughnsterling.com`
 
@@ -238,6 +252,7 @@ wrangler d1 execute vaughn-sites-db --file=scripts/schema.sql
 ### Bind to Pages Projects
 
 For each site:
+
 1. Go to Pages project in dashboard
 2. Settings → Functions
 3. D1 Database Bindings
@@ -354,28 +369,31 @@ npm run seed              # Create database schema
 ## COST BREAKDOWN (All Free Tier!)
 
 ### Cloudflare Pages (Free Tier)
+
 - 500 builds/month (16 per site)
 - Unlimited requests
 - 100GB bandwidth
 - **Cost: R0/month**
 
 ### Cloudflare D1 (Free Tier)
+
 - 5GB storage
 - 5M reads/day
 - 100K writes/day
 - **Cost: R0/month**
 
 ### Cloudflare Workers (Free Tier)
+
 - 100K requests/day per site
 - **Cost: R0/month**
 
 ### Domain Registration
-copilot/setup-cloudflare-hosting
+
 - Already purchased (8 months remaining)
-main
 - **Cost: R0/month**
 
 ### OpenAI (One-time)
+
 - Content generation: ~$1-2 one-time
 - **Monthly cost: R0**
 
@@ -421,11 +439,13 @@ main
 When you exceed free tier limits (good problem to have!):
 
 ### Cloudflare Pages Pro ($20/month)
+
 - 5,000 builds/month
 - Priority support
 - Only needed when building > 500x/month
 
 ### When to Upgrade?
+
 - **Month 1-3:** Stay on free tier
 - **Month 4+:** Evaluate based on traffic
 - **Threshold:** >100K visits/day = consider upgrading
@@ -434,9 +454,9 @@ When you exceed free tier limits (good problem to have!):
 
 ## SUPPORT & RESOURCES
 
-- **Astro Docs:** https://docs.astro.build
-- **Cloudflare Pages:** https://pages.cloudflare.com
-- **Wrangler CLI:** https://developers.cloudflare.com/workers/wrangler/
+- **Astro Docs:** <https://docs.astro.build>
+- **Cloudflare Pages:** <https://pages.cloudflare.com>
+- **Wrangler CLI:** <https://developers.cloudflare.com/workers/wrangler/>
 - **This README:** Full feature documentation
 
 ---

@@ -43,10 +43,9 @@ cp .env.example .env
 
 1. **Generate Content** (Optional)
 
-3. **Generate Content** (Optional)
-```bash
-npm run generate-content
-```
+   ```bash
+   npm run generate-content
+   ```
 
 1. **Development**
 
